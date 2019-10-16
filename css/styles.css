@@ -1,0 +1,42 @@
+/* mobile first layout */
+
+/* font familiies: 
+
+font-family: 'Bree Serif', serif;
+
+font-family: 'Ubuntu', sans-serif; */
+
+
+
+:root {
+    /* color palette taken from colormind.io */
+    --bg_color: #EEf0F1;
+    --bg_accent: #857DA0;
+    --brand_color: #8A8ABC;
+    --dark_accent: #6C6C94;
+    --dark_shade: #372D5D;
+}
+
+
+
+/* Layout 2 (medium)
+@media screen and (min-width: 800px) and (max-width: 1200px){
+    header{
+        color: rebeccapurple;
+    }
+} */
+
+/* Layout 3 (large)
+@media screen and (min-width: 600px) and (max-width 800px){
+    header{
+        color: rebeccapurple;
+    }
+} */
+
+/* Layout 4 (extra large)
+@media screen and (min-width: 1200px){
+    header{
+        color: rebeccapurple;
+    }
+} */
+
