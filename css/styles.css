@@ -6,8 +6,6 @@ font-family: 'Bree Serif', serif;
 
 font-family: 'Ubuntu', sans-serif; */
 
-
-
 :root {
     /* color palette taken from colormind.io */
     --bg_color: #EEf0F1;
@@ -17,7 +15,12 @@ font-family: 'Ubuntu', sans-serif; */
     --dark_shade: #372D5D;
 }
 
-
+/* mobile first layout */
+header h1 {
+    width: 100%;
+    background-image: url(https://placebear.com/1680/1080);
+    text-shadow: 2px 2px #FFFFFF;
+}
 
 /* Layout 2 (medium)
 @media screen and (min-width: 800px) and (max-width: 1200px){
