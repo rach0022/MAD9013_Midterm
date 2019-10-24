@@ -15,11 +15,91 @@ font-family: 'Ubuntu', sans-serif; */
     --dark_shade: #372D5D;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 18px;
+}
+
+/* default font families */
+h1, h2, h3 {
+    font-family: 'Bree Serif', serif;
+}
+
+li, p, a {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
 /* mobile first layout */
-header h1 {
+.wrapper {
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    background-color: var(--bg_color);
+    text-align: justify;
+    align-content: flex-end;
+}
+
+body {
+    align-self: center;
+}
+
+/* header + navbar elements  */
+
+header{
     width: 100%;
+    height: auto;
     background-image: url(https://placebear.com/1680/1080);
-    text-shadow: 2px 2px #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+header h1 {
+    font-size: 40px;
+    color: var(--brand_color);
+
+    /* text shadow stamped look taken from STEVE review during reading week  */
+    text-shadow: 2px 2px var(--bg_color), -2px -2px var(--dark_shade);
+    text-align: center;
+}
+
+/* content: articles + pictures */
+
+/* NAVIGATION */
+
+nav{
+    padding-top: 0;
+    margin: 0;
+}
+nav li {
+    text-align: center;
+    align-self: flex-start;
+    background-color: var(--bg_accent);
+    border: solid 2px var(--brand_color);
+    padding: 0;
+}
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: none;
+}
+
+nav li:hover{
+    background-color: var(--dark_accent);
+}
+
+/* main content  */
+body{
+    padding: 0;
+}
+
+/* footer */
+
+footer{
+    text-align: center;
 }
 
 /* Layout 2 (medium)
