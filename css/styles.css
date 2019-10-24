@@ -36,12 +36,15 @@ li, p, a {
 /* mobile first layout */
 .wrapper {
     width: 95%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas:    "head"
+                            "nav"
+                            "first"
+                            "second"
+                            "footer";
     background-color: var(--bg_color);
     text-align: justify;
-    align-content: flex-end;
     margin: 0 auto;
 }
 
@@ -52,8 +55,7 @@ header{
     height: auto;
     background-image: url(https://placebear.com/1680/1080);
     background-position: center;
-    margin: 0;
-    padding: 0;
+    grid-area: head;
 }
 header h1 {
     font-size: 40px;
@@ -70,6 +72,7 @@ nav{
     width: 100%;
     padding-top: 0;
     margin: 0;
+    grid-area: nav;
 }
 nav li {
     text-align: center;
@@ -99,6 +102,14 @@ nav a:hover {
 }
 
 /* content: articles + pictures */
+div.article.first{
+    grid-area: head;
+}
+div.article.two{
+    grid-area: second;
+    /* border: solid 10px black; */
+}
+
 .article {
     width: inherit;
     /* padding: 15px; */
@@ -106,22 +117,21 @@ nav a:hover {
 .article h2 {
     text-align: center;
     padding-top: 15px;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
 }
 .article figure {
     background: var(--brand_color);
     text-align: center;
     color: var(--bg_color);
     font-size: 20px;
-
     /* need to fix image sizing later  */
     margin: 0;
 }
 .article figure img{
     /* padding: 50px; */
     width: inherit;
-    /* https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/ */
-    display: inline-block; 
+    /* https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/
+    display: inline-block;  */
     height: auto;
     margin: 20px;
     background: var(--dark_accent);
@@ -133,6 +143,7 @@ nav a:hover {
 /* footer */
 
 footer{
+    grid-area: footer;
     width: 100%;
     text-align: center;
     background-color: var(--dark_shade);
@@ -147,8 +158,8 @@ footer{
     background-color: var(--dark_accent);
 }
 
-/* Layout 2 (medium) */
-@media screen and (min-width: 600px) and (max-width: 800px){
+/* /* Layout 2 (medium) */
+/* @media screen and (min-width: 600px) and (max-width: 800px){
     .wrapper {
         width: 100%;
         display: grid;
@@ -189,7 +200,7 @@ footer{
         width: 90%;
         grid-area: foot;
     }
-}
+} */
 
 /* Layout 3 (large)
 @media screen and (min-width: 800px) and (max-width 1200px){
