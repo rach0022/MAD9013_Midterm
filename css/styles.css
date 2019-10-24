@@ -172,10 +172,12 @@ footer{
     header {
         width: inherit;
         grid-area: head;
+        grid-column-end: 6;
     }
-    nav .navbar{
+    nav {
         width: 90%;
         grid-area: nav;
+        grid-column-end: 6;
     }
     .navbar ul li {
         width: 20%;
@@ -196,7 +198,8 @@ footer{
         grid-area: second;
     }
 
-    footer ul{
+    footer{
+        grid-column-start: -1;
         width: 90%;
         grid-area: foot;
     }
