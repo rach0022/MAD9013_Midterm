@@ -45,11 +45,6 @@ li, p, a {
     margin: 0 auto;
 }
 
-body {
-    align-self: center;
-    
-}
-
 /* header + navbar elements  */
 
 header{
@@ -104,12 +99,23 @@ nav a:hover {
 }
 
 /* content: articles + pictures */
-
+.article {
+    width: inherit;
+    /* padding: 15px; */
+}
+.article h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;;
+}
 .article figure {
     background: var(--brand_color);
     text-align: center;
     color: var(--bg_color);
     font-size: 20px;
+
+    /* need to fix image sizing later  */
+    margin: 0;
 }
 .article figure img{
     /* padding: 50px; */
@@ -141,22 +147,59 @@ footer{
     background-color: var(--dark_accent);
 }
 
-/* Layout 2 (medium)
-@media screen and (min-width: 800px) and (max-width: 1200px){
-    header{
-        color: rebeccapurple;
+/* Layout 2 (medium) */
+@media screen and (min-width: 600px) and (max-width: 800px){
+    .wrapper {
+        width: 100%;
+        display: grid;
+        grid-template-areas:    "head head head"
+                                "nav nav nav"
+                                "first . second"
+                                "foot foot foot";
     }
-} */
+
+    header {
+        width: inherit;
+        grid-area: head;
+    }
+    nav .navbar{
+        width: 90%;
+        grid-area: nav;
+    }
+    .navbar ul li {
+        width: 20%;
+    }
+    .main {
+        width: 90%;
+    }
+    .article{
+        width: 50%;
+    }
+    .article .one {
+        grid-area: first;
+    }
+    .article figure {
+        width: 60%;
+    }
+    .article .two {
+        grid-area: second;
+    }
+
+    footer ul{
+        width: 90%;
+        grid-area: foot;
+    }
+}
 
 /* Layout 3 (large)
-@media screen and (min-width: 600px) and (max-width 800px){
+@media screen and (min-width: 800px) and (max-width 1200px){
     header{
         color: rebeccapurple;
     }
 } */
 
 /* Layout 4 (extra large)
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1201px){
     header{
         color: rebeccapurple;
     }
