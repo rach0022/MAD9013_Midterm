@@ -102,10 +102,10 @@ nav a:hover {
 }
 
 /* content: articles + pictures */
-div.article.first{
-    grid-area: head;
+#one{
+    grid-area: first;
 }
-div.article.two{
+#two{
     grid-area: second;
     /* border: solid 10px black; */
 }
@@ -159,7 +159,7 @@ footer{
 }
 
 /* /* Layout 2 (medium) */
-/* @media screen and (min-width: 600px) and (max-width: 800px){
+@media screen and (min-width: 600px) and (max-width: 800px){
     .wrapper {
         width: 100%;
         display: grid;
@@ -186,13 +186,13 @@ footer{
     .article{
         width: 50%;
     }
-    .article .one {
+    #one {
         grid-area: first;
     }
     .article figure {
         width: 60%;
     }
-    .article .two {
+    #two {
         grid-area: second;
     }
 
@@ -200,7 +200,7 @@ footer{
         width: 90%;
         grid-area: foot;
     }
-} */
+}
 
 /* Layout 3 (large)
 @media screen and (min-width: 800px) and (max-width 1200px){
