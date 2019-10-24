@@ -35,17 +35,19 @@ li, p, a {
 
 /* mobile first layout */
 .wrapper {
-    width: auto;
+    width: 95%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-end;
     background-color: var(--bg_color);
     text-align: justify;
     align-content: flex-end;
+    margin: 0 auto;
 }
 
 body {
     align-self: center;
+    
 }
 
 /* header + navbar elements  */
@@ -66,11 +68,10 @@ header h1 {
     text-align: center;
 }
 
-/* content: articles + pictures */
-
 /* NAVIGATION */
 
 nav{
+    width: 100%;
     padding-top: 0;
     margin: 0;
 }
@@ -80,6 +81,7 @@ nav li {
     background-color: var(--bg_accent);
     border: solid 2px var(--brand_color);
     padding: 0;
+    width: inherit;
 }
 nav ul {
     padding: 0;
@@ -91,14 +93,34 @@ nav li:hover{
     background-color: var(--dark_accent);
 }
 
-/* main content  */
-body{
-    padding: 0;
+/* content: articles + pictures */
+
+.article figure {
+    background: var(--brand_color);
+    text-align: center;
+    color: var(--bg_color);
+    font-size: 20px;
 }
+.article figure img{
+    /* padding: 50px; */
+    width: inherit;
+    /* https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/ */
+    display: inline-block; 
+    height: auto;
+    margin: 20px;
+    background: var(--dark_accent);
+    border: dashed 20px var(--dark_shade);
+}
+
+
 
 /* footer */
 
 footer{
+    width: 100%;
+    text-align: center;
+    background-color: var(--dark_shade);
+    color: var(--bg_color);
     text-align: center;
 }
 
