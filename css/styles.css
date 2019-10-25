@@ -138,12 +138,20 @@ footer{
 
 /* Layout 2 (medium) */
 @media screen and (min-width: 600px) and (max-width: 800px){
+
+    /* wrapper container for medium layout  */
     .wrapper{
+
+        /* switch to display block to get out of display: flex  */
         display: block;
     }
+
+    /* header element for medium layout  */
     header{
         width: 100%;
     }
+
+    /* navigation bar and links inside it for medium layout  */
     nav{
         width: 90%;
 
@@ -158,11 +166,15 @@ footer{
     nav ul li {
         width: 20%;
     }
+
+    /* main elements for bear zone  */
     main {
         display: flex;
         justify-content: space-between;
         width: 90%;
         padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
         /* background-color: var(--bg_accent); */
     }
     main>section {
@@ -172,14 +184,19 @@ footer{
     }
     .article figure {
         width: 60%;
+        font-size: .8em;
         float: left;
     }
     .article > figure > img {
-        width: 60%;
+        border: none;
+        width: fit-content;
     }
     
+    /* footer for medium layout  */
     footer {
         width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
