@@ -141,7 +141,7 @@ footer{
 
     /* wrapper container for medium layout  */
     .wrapper{
-
+        font-size: 0.8em;
         /* switch to display block to get out of display: flex  */
         display: block;
     }
