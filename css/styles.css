@@ -93,7 +93,9 @@ nav li:hover{
     padding: 20px;
     
 }
-nav a:hover {
+
+/* targetting the links based on the hover state of the parent element  */
+nav li:hover a {
     transition: color 0.5s;
     color: var(--bg_color);
 }
@@ -162,9 +164,23 @@ footer{
     nav ul{
         display: flex;
         flex-direction: row;
+        font-size: 1.4em;
     }
     nav ul li {
+        background-color: var(--brand_color);
         width: 20%;
+    }
+    nav li:hover{
+        background-color: var(--dark_shade);
+
+        /* overwrote the effects from the mobile layout  */
+        padding: 0;
+        font-size: 1em;
+    }
+    /* targetting the link based on the hover state of its parent element  */
+    nav li:hover a {
+        transition: color 0.5s;
+        color: var(--bg_color);
     }
 
     /* main elements for bear zone  */
@@ -175,7 +191,7 @@ footer{
         padding: 10px;
         margin-left: auto;
         margin-right: auto;
-        /* background-color: var(--bg_accent); */
+        background-color: var(--bg_accent);
     }
     main>section {
         width: 50%;
@@ -186,6 +202,7 @@ footer{
         width: 60%;
         font-size: .8em;
         float: left;
+        background-color: var(--brand_color);
     }
     .article > figure > img {
         border: none;
