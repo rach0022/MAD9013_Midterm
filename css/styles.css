@@ -74,19 +74,23 @@ nav{
     margin: 0;
     grid-area: nav;
 }
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    margin: none;
+
+    /* flex propeteries  */
+    display: flex;
+    flex-flow: column nowrap;
+}
 nav li {
     text-align: center;
-    align-self: flex-start;
     background-color: var(--bg_accent);
     border: solid 2px var(--brand_color);
     padding: 0;
     width: inherit;
 }
-nav ul {
-    padding: 0;
-    list-style-type: none;
-    margin: none;
-}
+
 
 nav li:hover{
     /* transition idea taken from Steve REading week Review lecture  */
@@ -179,6 +183,10 @@ footer{
         grid-area: nav;
         grid-column-end: 6;
     }
+    nav ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .navbar ul li {
         width: 20%;
     }
@@ -187,12 +195,18 @@ footer{
     }
     .article{
         width: 50%;
+        /* align-self: center; */
     }
     #one {
         grid-area: first;
+        justify-self: center;
+        text-align: start;
+        background-color: rebeccapurple;
+        text-align: initial;
     }
-    .article figure {
+    .article figure img {
         width: 60%;
+        /* float: left; */
     }
     #two {
         grid-area: second;
