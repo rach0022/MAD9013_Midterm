@@ -169,7 +169,7 @@ footer{
         display: grid;
         grid-template-areas:    "head head head"
                                 "nav nav nav"
-                                "first . second"
+                                "main main main"
                                 "foot foot foot";
     }
 
@@ -190,32 +190,34 @@ footer{
     .navbar ul li {
         width: 20%;
     }
-    .main {
+    main {
         width: 90%;
+        grid-area: main;
+        display: grid;
+        grid-template-columns: repeat(3,auto);
     }
     .article{
         width: 50%;
-        /* align-self: center; */
     }
     #one {
-        grid-area: first;
-        justify-self: center;
-        text-align: start;
+        grid-column-start: 1;
         background-color: rebeccapurple;
-        text-align: initial;
+    }
+    #two {
+        grid-column-start: 5;
+
     }
     .article figure img {
         width: 60%;
         /* float: left; */
     }
-    #two {
-        grid-area: second;
-    }
+    
 
     footer{
         grid-column-start: -1;
         width: 90%;
         grid-area: foot;
+        justify-self: center;
     }
 }
 
