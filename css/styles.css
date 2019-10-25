@@ -268,7 +268,7 @@ footer{
         margin: auto;
     }
     .article figure {
-        float: right;
+        float: left;
         margin: 0;
         background-color: var(--bg_color);
         color: #000000;
@@ -300,10 +300,69 @@ footer{
     }
 }
 
-/* Layout 4 (extra large)
+/* Layout 4 (extra large) */
 @media screen and (min-width: 1200px){
-    header{
-        color: rebeccapurple;
+    /* wrapper and header selectors for extra large layout  */
+    .wrapper {
+        width: 100%;
+        display: block;
+        /* font-size: 1.5em; */
     }
-} */
+    header{
+        width: 100%;
+        height: 200px;
+        border-bottom: solid 30px var(--dark_shade);
+    }
+    header h1 {
+        font-size: 3em;
+    }
+
+    /* navigation for extra large layout  */
+    nav{
+        width: 30%;
+        float: left;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    /* overwriting the hover effects on nav  */
+    nav ul li:hover, nav ul li a:hover, nav ul:hover, nav li:hover a {
+        font-style: oblique;
+        background-color: var(--bg_color);
+        color: #000000;
+        padding: 0;
+        font-size: 1em;
+    }
+
+    /* main content for extra large layout  */
+    main{
+        width: 70%;
+        
+        display: flex;
+        justify-content: space-around;
+    }
+    main > section{
+        width: 50%;
+    }
+    .article{
+        padding: 20px;;
+    }
+    .article figure {
+        float: left;
+        margin: 0;
+        background-color: var(--bg_color);
+        color: #000000;
+    }
+    .article figure img{
+        width: 55%;
+        border: none;
+        /* taken from steve reading week review lecture  */
+        box-shadow: 5px 5px 10px var(--dark_shade);
+    }
+
+    /* footer for extra large layout  */
+    footer {
+        width: 100%;
+    }
+}
 
