@@ -229,6 +229,8 @@ footer{
         width: 100%;
         border-bottom: solid 10px var(--dark_shade);
     }
+
+    /* navigation and hover animations for large layout view  */
     nav{
         width: 90%;
         margin-right: auto;
@@ -245,7 +247,6 @@ footer{
     }
 
     /* overwriting the hover effects on nav  */
-
     nav ul li:hover, nav ul li a:hover, nav ul:hover, nav li:hover a {
         font-style: oblique;
         background-color: var(--bg_color);
@@ -282,6 +283,7 @@ footer{
     .article > figure > img {
         width: inherit;
         border: none;
+        /* taken from steve reading week review lecture  */
         box-shadow: 5px 5px 10px var(--dark_shade);
     }
 
