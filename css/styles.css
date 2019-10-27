@@ -126,6 +126,12 @@ nav li:hover a {
     font-style: italic;
 }
 
+.article p::before{
+    /* method of inputting newline before text taken from: https://css-tricks.com/injecting-line-break/  */
+    content: "\A";
+    white-space: pre;
+}
+
 
 
 /* footer */
