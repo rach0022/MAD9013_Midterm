@@ -119,6 +119,13 @@ nav li:hover a {
     border: dashed 20px var(--dark_shade);
 }
 
+.article figure figcaption{
+    /* changing the style of the figcaption to that of more an article caption  */
+    position: relative;
+    top: -15px;
+    font-style: italic;
+}
+
 
 
 /* footer */
@@ -207,6 +214,11 @@ footer{
     .article > figure > img {
         border: none;
         width: fit-content;
+    }
+    .article figure figcaption{
+        position: relative;
+        top: -15px;
+        font-style: italic;
     }
     
     /* footer for medium layout  */
@@ -314,7 +326,7 @@ footer{
         border-bottom: solid 30px var(--dark_shade);
     }
     header h1 {
-        font-size: 3em;
+        font-size: 4em;
     }
 
     /* navigation for extra large layout  */
