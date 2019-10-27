@@ -308,7 +308,7 @@ footer{
         margin: 0;
         background-color: var(--bg_color);
         color: #000000;
-        margin-right: 10px;
+        margin-right: 20px;
     }
 
     .article figure figcaption{
