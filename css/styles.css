@@ -247,7 +247,7 @@ footer{
     }
 
     /* overwriting the hover effects on nav  */
-    nav ul li:hover, nav ul li a:hover, nav ul:hover, nav li:hover a {
+    nav ul li:hover, nav ul li a:hover, nav li:hover a {
         font-style: oblique;
         background-color: var(--bg_color);
         color: #000000;
@@ -324,14 +324,18 @@ footer{
     }
     nav ul li{
         width: 100%;
+        font-size: 1.5em;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     /* overwriting the hover effects on nav  */
-    nav ul li:hover, nav ul li a:hover, nav ul:hover, nav li:hover a {
+    nav ul li:hover, nav ul li a:hover, nav li:hover a {
         font-style: oblique;
         background-color: var(--bg_color);
         color: #000000;
-        padding: 0;
-        font-size: 1em;
+        padding: 10px 0 10px 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
     /* main content for extra large layout  */
@@ -358,6 +362,13 @@ footer{
         border: none;
         /* taken from steve reading week review lecture  */
         box-shadow: 5px 5px 10px var(--dark_shade);
+    }
+    .article figure figcaption{
+        /* change the style of the figcaption */
+        position: relative;
+        top: -10px;
+        font-size: 0.8em;
+        font-style: italic;
     }
 
     /* footer for extra large layout  */
