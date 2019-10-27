@@ -107,20 +107,22 @@ nav li:hover a {
 /* content: articles + pictures */
 
 .article figure {
+    width: auto;
     background: var(--brand_color);
     text-align: center;
     color: var(--bg_color);
     font-size: 20px;
+    margin-right: 10px;
 }
 .article figure img{
     /* padding: 50px; */
     width: inherit;
     /* https://www.freecodecamp.org/news/how-to-center-things-with-style-in-css-dc87b7542689/ */
-    display: inline-block; 
+    /* display: inline-block;  */
     height: auto;
-    margin: 20px;
+    margin: 20px auto 20px auto;
     background: var(--dark_accent);
-    border: dashed 20px var(--dark_shade);
+    /* border: dashed 10px var(--dark_shade); */
 }
 
 .article figure figcaption{
@@ -306,6 +308,7 @@ footer{
         margin: 0;
         background-color: var(--bg_color);
         color: #000000;
+        margin-right: 10px;
     }
 
     .article figure figcaption{
