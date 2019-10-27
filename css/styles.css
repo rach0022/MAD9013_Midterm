@@ -412,5 +412,9 @@ footer{
     footer {
         width: 100%;
     }
+    .endnotes {
+        display: flex;
+        justify-content: space-around;
+    }
 }
 
